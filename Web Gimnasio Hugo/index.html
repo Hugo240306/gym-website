@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM 15011 - Inicio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="#contenido" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- MENU DESPLEGABLE DE ACCESIBILIDAD (solo HTML/CSS, con <details>) -->
+    <details class="accesibilidad-widget">
+        <summary aria-label="Abrir opciones de accesibilidad">♿</summary>
+        <div class="panel-accesibilidad">
+            <h2>Accesibilidad</h2>
+            <a href="#">A+ Aumentar tamaño de texto</a>
+            <a href="#">A- Disminuir tamaño de texto</a>
+            <a href="#">Alto contraste</a>
+            <a href="#">Fuente para dislexia</a>
+            <a href="#">Restablecer</a>
+        </div>
+    </details>
+
+    <!-- CABECERA CON MENU -->
+    <header>
+        <nav class="navbar" aria-label="Menú principal">
+            <div class="logo">Power<span>Gym</span></div>
+            <ul class="menu">
+                <li><a href="index.html" class="activo" aria-current="page">Inicio</a></li>
+                <li><a href="rutinas.html">Rutinas</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#calculadoras">Calculadoras</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="contenido" tabindex="-1">
+        <h1>Entrena duro, vive mejor</h1>
+        <p>En PowerGym encontrarás planes de entrenamiento, dietas personalizadas y entrenadores
+            para ayudarte a conseguir tus objetivos.</p>
+        <a href="rutinas.html" class="btn">Ver rutinas</a>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="servicios" id="servicios">
+        <h2>Lo que ofrecemos</h2>
+        <div class="grid-servicios">
+
+            <div class="card">
+                <div class="icono" aria-hidden="true">📋</div>
+                <h3>Planes de entrenamiento</h3>
+                <p>Planes semanales adaptados a tu nivel, principiante, medio o avanzado.</p>
+                <a href="rutinas.html">Ver planes</a>
+            </div>
+
+            <div class="card">
+                <div class="icono" aria-hidden="true">🏋️</div>
+                <h3>Ejercicios</h3>
+                <p>Catálogo de ejercicios por grupo muscular con explicación de la técnica.</p>
+                <a href="rutinas.html">Ver ejercicios</a>
+            </div>
+
+            <div class="card">
+                <div class="icono" aria-hidden="true">📅</div>
+                <h3>Rutinas</h3>
+                <p>Rutinas de fuerza, cardio, hipertrofia y pérdida de peso.</p>
+                <a href="rutinas.html">Ver rutinas</a>
+            </div>
+
+            <div class="card">
+                <div class="icono" aria-hidden="true">🥗</div>
+                <h3>Dietas</h3>
+                <p>Ejemplos de dietas equilibradas para acompañar tu entrenamiento.</p>
+                <a href="#">Ver dietas</a>
+            </div>
+
+            <div class="card">
+                <div class="icono" aria-hidden="true">🧑‍🏫</div>
+                <h3>Entrenadores</h3>
+                <p>Nuestro equipo de entrenadores certificados está para ayudarte.</p>
+                <a href="#">Ver entrenadores</a>
+            </div>
+
+            <div class="card">
+                <div class="icono" aria-hidden="true">💳</div>
+                <h3>Membresías</h3>
+                <p>Elige el plan que mejor se adapte a ti: mensual, trimestral o anual.</p>
+                <a href="#">Ver membresías</a>
+            </div>
+
+            <div class="card">
+                <div class="icono" aria-hidden="true">⚖️</div>
+                <h3>Calculadora de IMC</h3>
+                <p>Calcula tu Índice de Masa Corporal en segundos.</p>
+                <a href="#calculadoras">Calcular</a>
+            </div>
+
+            <div class="card">
+                <div class="icono" aria-hidden="true">🔥</div>
+                <h3>Calculadora de calorías</h3>
+                <p>Descubre cuántas calorías necesitas según tu actividad diaria.</p>
+                <a href="#calculadoras">Calcular</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CALCULADORAS -->
+    <section class="calculadoras" id="calculadoras">
+        <h2>Calculadoras</h2>
+        <div class="flex-calculadoras">
+
+            <div class="caja-calc">
+                <h3>Calculadora de IMC</h3>
+                <div class="campo">
+                    <label for="peso">Peso (kg)</label>
+                    <input type="number" id="peso" placeholder="Ej: 70">
+                </div>
+                <div class="campo">
+                    <label for="altura">Altura (m)</label>
+                    <input type="number" id="altura" placeholder="Ej: 1.75" step="0.01">
+                </div>
+                <button type="button" onclick="calcularIMC()">Calcular IMC</button>
+                <p class="resultado" id="resultadoIMC"></p>
+            </div>
+
+            <div class="caja-calc">
+                <h3>Calculadora de calorías</h3>
+                <div class="campo">
+                    <label for="pesoCal">Peso (kg)</label>
+                    <input type="number" id="pesoCal" placeholder="Ej: 70">
+                </div>
+                <div class="campo">
+                    <label for="actividad">Nivel de actividad</label>
+                    <select id="actividad">
+                        <option value="1.2">Sedentario</option>
+                        <option value="1.375">Ligero</option>
+                        <option value="1.55">Moderado</option>
+                        <option value="1.725">Intenso</option>
+                    </select>
+                </div>
+                <button type="button" onclick="calcularCalorias()">Calcular calorías</button>
+                <p class="resultado" id="resultadoCal"></p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contacto">
+        <div class="grid-footer">
+            <div>
+                <h4>PowerGym</h4>
+                <p>Tu gimnasio de confianza para entrenar cada día un poco mejor.</p>
+            </div>
+            <div>
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="rutinas.html">Rutinas</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contacto</h4>
+                <ul>
+                    <li>Calle Falsa 123, Madrid</li>
+                    <li>info@powergym.com</li>
+                    <li>912 345 678</li>
+                </ul>
+            </div>
+        </div>
+        <p class="copy">© 2026 PowerGym. Práctica de HTML, Flex y Grid.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

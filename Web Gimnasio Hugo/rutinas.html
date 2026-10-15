@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym 15011 - Rutinas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="#contenido" class="saltar">Saltar al contenido principal</a>
+
+    <details class="accesibilidad">
+        <summary aria-label="Abrir opciones de accesibilidad">♿</summary>
+        <div class="panel-accesibilidad">
+            <h2>Accesibilidad</h2>
+            <a href="#">A+ Aumentar tamaño de texto</a>
+            <a href="#">A- Disminuir tamaño de texto</a>
+            <a href="#">Alto contraste</a>
+            <a href="#">Fuente para dislexia</a>
+            <a href="#">Restablecer</a>
+        </div>
+    </details>
+
+    <header>
+        <nav class="navbar" aria-label="Menú principal">
+            <div class="logo">Power<span>Gym</span></div>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="rutinas.html" class="activo" aria-current="page">Rutinas</a></li>
+                <li><a href="index.html#servicios">Servicios</a></li>
+                <li><a href="index.html#calculadoras">Calculadoras</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="titulo-pagina" id="contenido" tabindex="-1">
+        <h1>Nuestras rutinas</h1>
+        <p>Elige la rutina que mejor se adapte a tu objetivo</p>
+    </section>
+
+    <div class="filtros">
+        <button class="activo">Todas</button>
+        <button>Fuerza</button>
+        <button>Cardio</button>
+        <button>Hipertrofia</button>
+        <button>Pérdida de peso</button>
+    </div>
+
+    <section class="rutinas-grid">
+
+        <div class="rutina-card">
+            <div class="rutina-imagen">🏋️</div>
+            <div class="rutina-info">
+                <h3>Fuerza total</h3>
+                <div class="etiquetas">
+                    <span class="etiqueta">Fuerza</span>
+                    <span class="etiqueta">Avanzado</span>
+                </div>
+                <p>Rutina de 4 días centrada en los movimientos básicos de fuerza.</p>
+                <ul>
+                    <li>Sentadilla - 4 series x 6 reps</li>
+                    <li>Press banca - 4 series x 6 reps</li>
+                    <li>Peso muerto - 3 series x 5 reps</li>
+                </ul>
+                <a href="#" class="boton">Empezar rutina</a>
+            </div>
+        </div>
+
+        <div class="rutina-card">
+            <div class="rutina-imagen">🏃</div>
+            <div class="rutina-info">
+                <h3>Cardio quema grasa</h3>
+                <div class="etiquetas">
+                    <span class="etiqueta">Cardio</span>
+                    <span class="etiqueta">Principiante</span>
+                </div>
+                <p>Ideal para mejorar la resistencia y quemar calorías extra.</p>
+                <ul>
+                    <li>Cinta - 20 min ritmo moderado</li>
+                    <li>Bicicleta - 15 min</li>
+                    <li>Saltos a la comba - 5 min</li>
+                </ul>
+                <a href="#" class="boton">Empezar rutina</a>
+            </div>
+        </div>
+
+        <div class="rutina-card">
+            <div class="rutina-imagen">💪</div>
+            <div class="rutina-info">
+                <h3>Hipertrofia tren superior</h3>
+                <div class="etiquetas">
+                    <span class="etiqueta">Hipertrofia</span>
+                    <span class="etiqueta">Intermedio</span>
+                </div>
+                <p>Enfocada en aumentar volumen muscular en pecho, espalda y brazos.</p>
+                <ul>
+                    <li>Press inclinado - 4 series x 10 reps</li>
+                    <li>Remo con barra - 4 series x 10 reps</li>
+                    <li>Curl de bíceps - 3 series x 12 reps</li>
+                </ul>
+                <a href="#" class="boton">Empezar rutina</a>
+            </div>
+        </div>
+
+        <div class="rutina-card">
+            <div class="rutina-imagen">🔥</div>
+            <div class="rutina-info">
+                <h3>Pérdida de peso full body</h3>
+                <div class="etiquetas">
+                    <span class="etiqueta">Pérdida de peso</span>
+                    <span class="etiqueta">Principiante</span>
+                </div>
+                <p>Rutina de cuerpo completo combinada con cardio ligero.</p>
+                <ul>
+                    <li>Circuito de 5 ejercicios x 3 vueltas</li>
+                    <li>Burpees - 3 series x 10 reps</li>
+                    <li>Cardio final - 10 min</li>
+                </ul>
+                <a href="#" class="boton">Empezar rutina</a>
+            </div>
+        </div>
+
+        <div class="rutina-card">
+            <div class="rutina-imagen">🦵</div>
+            <div class="rutina-info">
+                <h3>Piernas y glúteo</h3>
+                <div class="etiquetas">
+                    <span class="etiqueta">Fuerza</span>
+                    <span class="etiqueta">Intermedio</span>
+                </div>
+                <p>Rutina centrada en el tren inferior, piernas y glúteos.</p>
+                <ul>
+                    <li>Sentadilla búlgara - 3 series x 10 reps</li>
+                    <li>Zancadas - 3 series x 12 reps</li>
+                    <li>Hip thrust - 4 series x 10 reps</li>
+                </ul>
+                <a href="#" class="boton">Empezar rutina</a>
+            </div>
+        </div>
+
+        <div class="rutina-card">
+            <div class="rutina-imagen">🧘</div>
+            <div class="rutina-info">
+                <h3>Movilidad y recuperación</h3>
+                <div class="etiquetas">
+                    <span class="etiqueta">Cardio</span>
+                    <span class="etiqueta">Todos los niveles</span>
+                </div>
+                <p>Rutina suave para los días de descanso activo.</p>
+                <ul>
+                    <li>Estiramientos - 10 min</li>
+                    <li>Movilidad de cadera - 10 min</li>
+                    <li>Respiración y relajación - 5 min</li>
+                </ul>
+                <a href="#" class="boton">Empezar rutina</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="grid-footer">
+            <div>
+                <h4>Gym 15011</h4>
+                <p>Tu gimnasio de confianza para entrenar cada día un poco mejor.</p>
+            </div>
+            <div>
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="rutinas.html">Rutinas</a></li>
+                    <li><a href="index.html#servicios">Servicios</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contacto</h4>
+                <ul>
+                    <li>Labañou, Coruña</li>
+                    <li>info@gym15011.com</li>
+                    <li>912 345 678</li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer">© 2026 Gym 15011.</p>
+    </footer>
+
+</body>
+</html>
